@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>位孟泽 - 软件工程专业简历</title> 
+    <style> 
+        :root { 
+            --primary: #2d4059; 
+            --secondary: #ea5455; 
+            --accent: #f07b3f; 
+        } 
+        body { 
+            font-family: 'Microsoft YaHei', sans-serif; 
+            line-height: 1.8; 
+            max-width: 1024px; 
+            margin: 2rem auto; 
+            padding: 0 2rem; 
+        } 
+        /* 头部信息区 */ 
+       .header { 
+            display: grid; 
+            grid-template-columns: 1fr 300px; 
+            border-bottom: 3px solid var(--secondary); 
+            padding-bottom: 1.5rem; 
+            margin-bottom: 2rem; 
+        } 
+       .name-title h1 { 
+            font-size: 2.5em; 
+            color: var(--primary); 
+            margin-bottom: 0.2em; 
+        } 
+        /* 信息网格布局 */ 
+       .info-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 1.5rem; 
+            margin: 2rem 0; 
+        } 
+       .info-card { 
+            background: #f8f9fa; 
+            padding: 1.5rem; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+        } 
+        /* 标签样式 */ 
+       .tag { 
+            display: inline-block; 
+            padding: 0.3em 0.8em; 
+            background: var(--accent); 
+            color: white; 
+            border-radius: 20px; 
+            margin: 0.2em; 
+        } 
+        /* 打印优化 */ 
+        @media print { 
+            body { font-size: 12pt; } 
+           .info-card { box-shadow: none; } 
+        } 
+    </style> 
+</head> 
+<body> 
+    <img src="image1.jpg" width="200"alt="">
+    <div class="header"> 
+        <div class="name-title"> 
+            <h1>位孟泽</h1> 
+            <h2>软件工程在读</h2> 
+        </div> 
+        <div class="contact-info"> 
+            <p>📞 159-3696-8896</p > 
+            <p>📍 河南周口</p > 
+            <p>📧 2128360672@qq.com</p > 
+        </div> 
+    </div> 
+    <div class="info-grid"> 
+        <!-- 基本信息模块 --> 
+        <div class="info-card"> 
+            <h3>🔍 基础信息</h3> 
+            <ul> 
+                <li>性别：男 | 民族：汉</li> 
+                <li>出生日期：2004.05.16</li> 
+                <li>政治面貌：群众</li> 
+                <li>身高/体重：180cm/67kg</li> 
+            </ul> 
+        </div> 
+        <!-- 教育背景模块 --> 
+        <div class="info-card"> 
+            <h3>🎓 教育经历</h3> 
+            <p><strong>软件工程本科</strong><br> 
+            [学校名称:华北水利水电大学]（[2023]-[2027]）</p > 
+        </div> 
+        </div> 
+        <!-- 兴趣与评价 --> 
+        <div class="info-card"> 
+            <h3>🎵 兴趣爱好</h3> 
+            <p>听音乐</p > 
+ 
+            <h3 style="margin-top:1.5rem;">✨ 自我评价</h3> 
+            <p>好好学习天天向上</p > 
+        </div> 
+    </div> 
+</body> 
+</html>
